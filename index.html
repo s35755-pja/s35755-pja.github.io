@@ -4,20 +4,23 @@
         <meta charset="utf-8">
         <title>Strona Mirki</title>
         <style>
-
+        
             body{
               padding:20px;
             margin:20px;  
+
             }
             header {
                 background-color: rgba(255, 145, 172, 0.7);
              color:rgb(255, 220, 230);
-              padding:20px;
-            margin:20px;  
-             font-family:"Lobster"
+              padding:10px;
+            margin:auto; 
+            height:auto;
+            width: 180px;
+        
             }
             .link{
-                color:crimson;
+                color:rgb(125, 14, 37);
                 background-color:rgb(81, 153, 71);
                 border: 2px solid green;
                 display:inline-block;
@@ -29,49 +32,63 @@
 
             }
             .link:hover{
-                background-color:chartreuse;
+                background-color:rgb(143, 218, 69);
                 border-radius: 20px;
                 transition-duration: 0.3s;
             }
             .flexbox {
                 display:flex;
-                flex-direction: row;
+                flex-direction: column;
                 justify-content: center;
                 flex-wrap: wrap;
-                align-content: center;
+                align-content:first baseline;
                
             }
             .flexbox > a, link {
                 width: 100px;
                 height: 40px
             }
+            .naglowek {
+                align-content: center;
+            }
+            .ramka{
+            border: 5px solid white;
+            background: pink;
+            align-content: center;
+            margin: 20px;
+            }
+            
+           
         </style>
 
 
     </head>
     <body style="background-image:url(https://cdn.pixabay.com/photo/2022/04/21/06/23/spring-7146754_1280.jpg)">
         <header> 
-            <h1>Pierwsza Strona Mirki</h1>
+             <h1>Piękno roślin</h1> 
 
            
         </header>
         <div class="flexbox">
 
-              <a class="link" href="podstrona.html">Link do podstrony</a> 
-              <a class="link" href="podstrona2.html">Link do podstrony 2</a>
+              <a class="link" href="podstrona.html" 
+              target="_blank">Mowa kwiatów</a> 
+              <a class="link" href="podstrona2.html"target="_blank">Znaczenie roślin</a>
               </body>
             </div>
             <br></header>
-            <button onclick="window.open ('podstrona.html', '_blank');"
-            type="button">Button do podstrony</button>
             <br>
             <br>
-        <img src="kwiatjabloni.png" alt="image of Kasia and Jacek Sienkiewicz" style="width: 200px;">
-        <img src="https://i.ytimg.com/vi/tu6vPd--Wdk/maxresdefault.jpg" alt="Image of kwiat jabloni"style="width:200px">
+            <div class="ramka">
+            <h3> Czym są kwiaty?</h3>
+            <p>Kwiat – organ roślin nasiennych, w którym wykształcają się wyspecjalizowane elementy służące do rozmnażania. Stanowi fragment pędu o ograniczonym wzroście ze skupieniem liści płodnych i płonnych, służących odpowiednio, bezpośrednio i pośrednio do rozmnażania płciowego (generatywnego). Kwiat charakterystyczny dla roślin nasiennych (czyli kwiatowych) jest organem homologicznym do kłosa zarodnionośnego (sporofilostanu) roślin ewolucyjnie starszych.</p>
+            </div>
+        <img class="flexbox" src="kwiatjabloni.png" alt="image of Kasia and Jacek Sienkiewicz" style="width: 200px; align-content: center;">
+        <img class= "flezbox" src="https://i.ytimg.com/vi/tu6vPd--Wdk/maxresdefault.jpg" alt="Image of kwiat jabloni"style="width:200px; align-content: center;">
 
 
         <footer> 
-            <p> <b>Lorem ipsum dolor</b> sit, amet consectetur adipisicing elit. Maxime totam amet dolorem beatae, a ut! Consectetur iusto illo, aliquid, modi quis voluptates est laborum perferendis commodi omnis, nihil ea similique.</p>
+            <p><i><b>Zofia Wierzbowska s35755<b></b></i></p>
 
         </footer>
     </body>
