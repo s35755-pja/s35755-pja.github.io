@@ -14,14 +14,14 @@
              color:rgb(255, 220, 230);
               padding:20px;
             margin:20px;  
-             font-family:Lobster"
+             font-family:"Lobster"
             }
             .link{
                 color:crimson;
-                background-color:whitesmoke;
+                background-color:rgb(81, 153, 71);
                 border: 2px solid green;
                 display:inline-block;
-                margin: 20px;
+                margin: 10px;
                 border-radius: 5px;
                 padding: 5px;
                 transition-duration: 0.3s;
@@ -33,6 +33,18 @@
                 border-radius: 20px;
                 transition-duration: 0.3s;
             }
+            .flexbox {
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                align-content: center;
+               
+            }
+            .flexbox > a, link {
+                width: 100px;
+                height: 40px
+            }
         </style>
 
 
@@ -43,10 +55,15 @@
 
            
         </header>
-    
-              <a class="link" href="podstrona.html">Link do podstrony</a>
+        <div class="flexbox">
+
+              <a class="link" href="podstrona.html">Link do podstrony</a> 
+              <a class="link" href="podstrona2.html">Link do podstrony 2</a>
+              </body>
+            </div>
             <br></header>
-            <button onclick="location.href='podstrona.html'">Button do podstrony</button>
+            <button onclick="window.open ('podstrona.html', '_blank');"
+            type="button">Button do podstrony</button>
             <br>
             <br>
         <img src="kwiatjabloni.png" alt="image of Kasia and Jacek Sienkiewicz" style="width: 200px;">
